@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+- Orange 500: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 100%, 100%)
+- Grey 500: hsl(217, 12%, 63%)
+- Grey 900: hsl(213, 19%, 18%)
+- Grey 950: hsl(216, 12%, 8%)
+
+font-family: "Overpass", sans-serif;
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main>section#principal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #212932;
+    width: 320px;
+    height: 320px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+main>section#principal>div#imagem {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section#principal>h1 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+main>section#principal>p {
+    color: hsla(217, 12%, 63%, 0.538);
+    margin-top: 25px;
+}
+
+/* main > section#principal > button {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    border-radius: 50%;
+    border: none;
+}
+
+main > section#principal >  button > a {
+    color: hsla(217, 12%, 63%, 0.935);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main > section#principal > button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+main > section#principal >button > a:hover {
+    color: hsl(216, 12%, 8%);
+}  */
+
+main > section#principal>nav {
+    display: flex;
+    margin-top: 30px;
+}
+ 
+main>section#principal> nav > a {
+   width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: hsla(217, 12%, 63%, 0.935);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+
+    text-decoration: none;
+}
+
+main>section#principal>nav>a:hover {
+    color: #212932;
+    background-color: hsl(25, 97%, 53%);
+}
+
+.attribution {
+    transform: translateY(-100px);
+    color: aliceblue;
+    letter-spacing: 2px;
+}
